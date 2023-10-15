@@ -1,13 +1,13 @@
-package Journals;
+package Entities.User.Journal;
 
-import Entities.User;
-import Iterators.Journals.UserJournalIterator;
-import Iterators.UserIterator;
+import Entities.User.User;
+import Entities.User.UserIterators.IteratorOfUsersOfJournal;
+import Entities.User.UserIterators.UserIterator;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserJournal implements Journal{
+public class UserJournal implements UserJournalInterface {
     private List<User> users;
 
     public UserJournal(List<User> cache) {
@@ -61,12 +61,12 @@ public class UserJournal implements Journal{
 
     @Override
     public UserIterator createFriendsIterator(String userName) {
-        return new UserJournalIterator(this, "friends", userName);
+        return new IteratorOfUsersOfJournal(this, "friends", userName);
     }
 
     @Override
     public UserIterator createCoworkersIterator(String userName) {
-        return new UserJournalIterator(this, "coworkers", userName);
+        return new IteratorOfUsersOfJournal(this, "coworkers", userName);
     }
 
 }

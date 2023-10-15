@@ -1,4 +1,4 @@
-package Entities;
+package Entities.File;
 
 public class File {
 }

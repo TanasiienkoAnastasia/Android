@@ -1,8 +1,8 @@
-package Journals;
+package Entities.User.Journal;
 
-import Iterators.UserIterator;
+import Entities.User.UserIterators.UserIterator;
 
-public interface Journal {
+public interface UserJournalInterface {
     UserIterator createFriendsIterator(String userName);
 
     UserIterator createCoworkersIterator(String userName);

@@ -1,7 +1,7 @@
-import Entities.User;
-import Greeter.UserGreeter;
-import Journals.Journal;
-import Journals.UserJournal;
+import Entities.User.User;
+import Entities.User.Greeter.UserGreeter;
+import Entities.User.Journal.UserJournalInterface;
+import Entities.User.Journal.UserJournal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        Journal journal;
+        UserJournalInterface journal;
         journal = new UserJournal(createTestUsers());
 
         UserGreeter greeter = new UserGreeter(journal);
@@ -30,5 +30,5 @@ public class Demo {
         return data;
     }
 
-    
+
 }

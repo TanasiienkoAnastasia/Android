@@ -1,13 +1,12 @@
-package Iterators.Journals;
+package Entities.User.UserIterators;
 
-import Entities.User;
-import Iterators.UserIterator;
-import Journals.UserJournal;
+import Entities.User.User;
+import Entities.User.Journal.UserJournal;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserJournalIterator implements UserIterator {
+public class IteratorOfUsersOfJournal implements UserIterator {
     private UserJournal userJournal;
     private String type;
     private String name;
@@ -15,7 +14,7 @@ public class UserJournalIterator implements UserIterator {
     private List<String> names = new ArrayList<>();
     private List<User> users = new ArrayList<>();
 
-    public UserJournalIterator(UserJournal userJournal, String type, String name) {
+    public IteratorOfUsersOfJournal(UserJournal userJournal, String type, String name) {
         this.userJournal = userJournal;
         this.type = type;
         this.name = name;

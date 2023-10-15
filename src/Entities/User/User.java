@@ -1,6 +1,4 @@
-package Entities;
-
-import Iterators.UserIterator;
+package Entities.User;
 
 import java.util.ArrayList;
 import java.util.HashMap;
