@@ -1,28 +1,30 @@
 package Entities.User.UserIterators;
 
-import Entities.User.User;
 import Entities.User.Journal.UserJournal;
+import Entities.User.User;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class IteratorOfUsersOfJournal implements UserIterator {
+public class IteratorOfSexOfUsersOfJournal implements UserIterator{
     private UserJournal userJournal;
-    private String type;
     private String name;
+    private String sex;
     private int currentPosition = 0;
     private List<String> names = new ArrayList<>();
     private List<User> users = new ArrayList<>();
 
-    public IteratorOfUsersOfJournal(UserJournal userJournal, String type, String name) {
+    public IteratorOfSexOfUsersOfJournal(UserJournal userJournal, String sex, String name) {
         this.userJournal = userJournal;
-        this.type = type;
+
         this.name = name;
+        this.sex = sex;
     }
+
 
     private void lazyLoad() {
         if (names.size() == 0) {
-            List<String> users = userJournal.requestUserFriendsFromUserJournal(this.name, this.type);
+            List<String> users = userJournal.requestMalesFromUserJournal(this.sex);
             for (String user : users) {
                 this.names.add(user);
                 this.users.add(null);
@@ -43,18 +45,17 @@ public class IteratorOfUsersOfJournal implements UserIterator {
             return null;
         }
 
-        String friendName = names.get(currentPosition);
-        User friendProfile = users.get(currentPosition);
-        if (friendProfile == null) {
-            friendProfile = userJournal.requestUserFromUserJournal(friendName);
-            users.set(currentPosition, friendProfile);
+        String maleName = names.get(currentPosition);
+        User maleUser = users.get(currentPosition);
+        if (maleUser == null) {
+            maleUser = userJournal.requestUserFromUserJournal(maleName);
+            users.set(currentPosition, maleUser);
         }
         currentPosition++;
-        return friendProfile;
+        return maleUser;
     }
     @Override
     public void reset() {
         currentPosition = 0;
     }
-
 }

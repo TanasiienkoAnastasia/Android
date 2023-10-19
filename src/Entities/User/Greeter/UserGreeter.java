@@ -29,6 +29,7 @@ public class UserGreeter {
         }
     }
 
+
     public void sendMessage(String name, String message) {
         System.out.println("Sent message to: '" + name + "'. Message body: '" + message + "'");
     }

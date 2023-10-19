@@ -2,38 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1aaaf28-6d9f-4a70-bcbc-e741e9b71a58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/FileIterators/FileIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/FileIterators/IteratorOfFilesOfJournal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Journal/FileJournal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Journal/FileJournalInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Sorter/FileSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFileCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFileDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFileLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFilePlace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/User/UserIterators/IteratorOfSexOfUsersOfJournal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/FileSpecification/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/FileSpecification/Date.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/FileSpecification/Link.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/FileSpecification/Place.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Greeter/UserGreeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Greeter/UserGreeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterators/FileIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterators/IteratorOfFileSpecification/CategoryIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterators/IteratorOfFileSpecification/DateIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterators/IteratorOfFileSpecification/LinkIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterators/IteratorOfFileSpecification/PlaceIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterators/IteratorOfStatistics/CategoryStatisticsIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterators/IteratorOfStatistics/DateStatisticsIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterators/Journals/UserJournalIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/UserIterators/IteratorOfUsersOfJournal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterators/UserIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/UserIterators/UserIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Journals/Journal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Journal/UserJournalInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Journals/UserJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Journal/UserJournal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statistics/CategoryStatistics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statistics/DateStatistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/File/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/File/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/User/Greeter/UserGreeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Greeter/UserGreeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/User/Journal/UserJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Journal/UserJournal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/User/UserIterators/IteratorOfUsersOfJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/UserIterators/IteratorOfTypeOfUsersOfJournal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -104,7 +80,9 @@
       <workItem from="1697316263336" duration="29000" />
       <workItem from="1697317441342" duration="1901000" />
       <workItem from="1697358606595" duration="4366000" />
-      <workItem from="1697373038379" duration="9341000" />
+      <workItem from="1697373038379" duration="11263000" />
+      <workItem from="1697387577822" duration="9527000" />
+      <workItem from="1697565605331" duration="56000" />
     </task>
     <servers />
   </component>

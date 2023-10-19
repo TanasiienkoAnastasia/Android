@@ -1,7 +1,7 @@
 package Entities.User.Journal;
 
 import Entities.User.User;
-import Entities.User.UserIterators.IteratorOfUsersOfJournal;
+import Entities.User.UserIterators.IteratorOfTypeOfUsersOfJournal;
 import Entities.User.UserIterators.UserIterator;
 
 import java.util.ArrayList;
@@ -21,30 +21,47 @@ public class UserJournal implements UserJournalInterface {
     public User requestUserFromUserJournal(String userName) {
 
         simulateNetworkLatency();
-        System.out.println("User journal: Loading user '" + userName + "' over the network...");
+        System.out.println("User journal: Loading user '" + userName + "' over the journal...");
 
-        // ...and return test data.
         return findUser(userName);
     }
 
 
     public List<String> requestUserFriendsFromUserJournal(String userName, String contactType) {
-        // Here would be a POST request to one of the Facebook API endpoints.
-        // Instead, we emulates long network connection, which you would expect
-        // in the real life...
         simulateNetworkLatency();
         System.out.println("User journal: Loading '" + contactType + "' list of '" + userName + "' over the journal...");
 
-        // ...and return test data.
         User user = findUser(userName);
         if (user != null) {
             return user.getContacts(contactType);
         }
         return null;
     }
+
+    public List<String> requestMalesFromUserJournal(String userSex) {
+        simulateNetworkLatency();
+        System.out.println("User journal: Loading user '" + userSex  + "' over the journal...");
+
+        User user = findUser(userSex);
+        if (user != null) {
+            return user.getContacts(userSex);
+        }
+        return null;
+    }
+
+
+
     private User findUser(String userName) {
         for (User user : users) {
             if (user.getName().equals(userName)) {
+                return user;
+            }
+        }
+        return null;
+    }
+    private User findUserSex(String userSex) {
+        for (User user : users) {
+            if (user.getSex().equals(userSex)) {
                 return user;
             }
         }
@@ -61,12 +78,11 @@ public class UserJournal implements UserJournalInterface {
 
     @Override
     public UserIterator createFriendsIterator(String userName) {
-        return new IteratorOfUsersOfJournal(this, "friends", userName);
+        return new IteratorOfTypeOfUsersOfJournal(this, "friends", userName);
     }
 
     @Override
     public UserIterator createCoworkersIterator(String userName) {
-        return new IteratorOfUsersOfJournal(this, "coworkers", userName);
+        return new IteratorOfTypeOfUsersOfJournal(this, "coworkers", userName);
     }
-
 }

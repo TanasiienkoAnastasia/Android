@@ -8,12 +8,15 @@ import java.util.Map;
 public class User{
     private String name;
     private String password;
+    private String sex;
 
     private Map<String, List<String>> users = new HashMap<>();
 
-    public User(String name, String password, String... contacts) {
+    public User(String name, String password, String sex, String... contacts) {
         this.name = name;
         this.password = password;
+        this.sex = sex;
+
 
 
         for (String contact : contacts) {
@@ -31,10 +34,14 @@ public class User{
             }
             this.users.get(userType).add(userName);
         }
+
     }
 
     public String getName() {
         return name;
+    }
+    public String getSex() {
+        return sex;
     }
 
     public String getPassword() {
