@@ -1,6 +1,4 @@
 package Entities.File.Iterator.FileCollectionImplementation;
-
-import Entities.File.Builder.File.FileCategory;
 import Entities.File.Iterator.File.File;
 import Entities.File.Iterator.File.FileCategoryEnum;
 import Entities.File.Iterator.File.FileMonthDateEnum;

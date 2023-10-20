@@ -1,8 +1,5 @@
 package Entities.User.IteratorOfGenderOfUser.User;
 
-import Entities.File.Iterator.File.FileCategoryEnum;
-import Entities.File.Iterator.File.FileMonthDateEnum;
-
 public class User {
     private String name;
     private UserGenderEnum gender;

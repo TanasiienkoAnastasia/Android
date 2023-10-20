@@ -11,3 +11,5 @@ public interface UserCollection {
 
     public UserIterator iteratorGender(UserGenderEnum gender);
 }
+
+

@@ -1,8 +1,4 @@
 package Entities.User.IteratorOfGenderOfUser.UserCollectionImplementation;
-
-import Entities.File.Iterator.File.File;
-import Entities.File.Iterator.File.FileCategoryEnum;
-import Entities.File.Iterator.File.FileMonthDateEnum;
 import Entities.User.IteratorOfGenderOfUser.User.User;
 import Entities.User.IteratorOfGenderOfUser.User.UserGenderEnum;
 import Entities.User.IteratorOfGenderOfUser.UserCollection.UserCollection;

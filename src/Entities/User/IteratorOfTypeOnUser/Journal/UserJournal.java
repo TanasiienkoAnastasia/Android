@@ -3,7 +3,6 @@ package Entities.User.IteratorOfTypeOnUser.Journal;
 import Entities.User.IteratorOfTypeOnUser.User.User;
 import Entities.User.IteratorOfTypeOnUser.UserIterators.IteratorOfTypeOfUsersOfJournal;
 import Entities.User.IteratorOfTypeOnUser.UserIterators.UserIterator;
-
 import java.util.ArrayList;
 import java.util.List;
 
