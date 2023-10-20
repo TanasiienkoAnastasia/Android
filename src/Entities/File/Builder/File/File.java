@@ -12,6 +12,7 @@ public class File {
     private final Transmission transmission;
     private final TripComputer tripComputer;
     private final FileNavigator fileNavigator;
+
     private double percentage = 0;
 
     public File(FileCategory fileCategory, FileMonthDate fileDate, Creator creator, Transmission transmission,

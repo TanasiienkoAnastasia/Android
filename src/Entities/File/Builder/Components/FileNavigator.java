@@ -1,17 +1,15 @@
 package Entities.File.Builder.Components;
 
 public class FileNavigator {
-    private String route;
+    private String filePath;
 
-    public FileNavigator() {
-        this.route = "Link .... ";
-    }
+    public FileNavigator() {this.filePath = "Link .... "; }
 
     public FileNavigator(String manualRoute) {
-        this.route = manualRoute;
+        this.filePath = manualRoute;
     }
 
     public String getRoute() {
-        return route;
+        return filePath;
     }
 }
