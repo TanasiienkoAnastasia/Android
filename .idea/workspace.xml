@@ -2,40 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1aaaf28-6d9f-4a70-bcbc-e741e9b71a58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Builders/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Builders/FileBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Builders/FileManualBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Components/Creator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Components/FileNavigator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Components/Transmission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Components/TripComputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Director/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/File/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/File/FileCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/File/FileMonthDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/File/Manual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Iterator/ChannelTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/File/Iterator/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Command/Commands/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Command/Commands/CommandHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Command/Commands/CopyCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Command/Commands/CutCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Command/Commands/PasteCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Command/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Command/Editor/Editor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File/File.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File/FileIterators/FileIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File/FileIterators/IteratorOfFilesOfJournal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File/Journal/FileJournal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File/Journal/FileJournalInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File/Sorter/FileSorter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFileCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFileDate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFileLink.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFilePlace.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User/Greeter/UserGreeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/Greeter/UserGreeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User/Journal/UserJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/Journal/UserJournal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User/Journal/UserJournalInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/Journal/UserJournalInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User/UserIterators/IteratorOfSexOfUsersOfJournal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User/UserIterators/IteratorOfTypeOfUsersOfJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/UserIterators/IteratorOfTypeOfUsersOfJournal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User/UserIterators/UserIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/UserIterators/UserIterator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +60,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Entities.User.Demo" />
+    <configuration name="Entities.File.Command.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Entities.File.Command.Demo" />
       <module name="Iterrator" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,7 +69,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.Entities.File.Command.Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +93,7 @@
       <workItem from="1697760836990" duration="3595000" />
       <workItem from="1697765441243" duration="566000" />
       <workItem from="1697766068489" duration="27000" />
-      <workItem from="1697766253096" duration="3954000" />
+      <workItem from="1697766253096" duration="4554000" />
     </task>
     <servers />
   </component>
