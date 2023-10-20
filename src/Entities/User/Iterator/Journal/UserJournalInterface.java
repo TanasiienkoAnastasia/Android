@@ -1,6 +1,6 @@
-package Entities.User.Journal;
+package Entities.User.Iterator.Journal;
 
-import Entities.User.UserIterators.UserIterator;
+import Entities.User.Iterator.UserIterators.UserIterator;
 
 public interface UserJournalInterface {
     UserIterator createFriendsIterator(String userName);

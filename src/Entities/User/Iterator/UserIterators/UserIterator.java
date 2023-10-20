@@ -1,6 +1,6 @@
-package Entities.User.UserIterators;
+package Entities.User.Iterator.UserIterators;
 
-import Entities.User.User;
+import Entities.User.Iterator.User;
 
 public interface UserIterator {
     boolean hasNext();

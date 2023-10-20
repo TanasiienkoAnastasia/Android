@@ -1,8 +1,8 @@
-package Entities.User.Journal;
+package Entities.User.Iterator.Journal;
 
-import Entities.User.User;
-import Entities.User.UserIterators.IteratorOfTypeOfUsersOfJournal;
-import Entities.User.UserIterators.UserIterator;
+import Entities.User.Iterator.User;
+import Entities.User.Iterator.UserIterators.IteratorOfTypeOfUsersOfJournal;
+import Entities.User.Iterator.UserIterators.UserIterator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,17 +38,6 @@ public class UserJournal implements UserJournalInterface {
         return null;
     }
 
-    public List<String> requestMalesFromUserJournal(String userSex) {
-        simulateNetworkLatency();
-        System.out.println("User journal: Loading user '" + userSex  + "' over the journal...");
-
-        User user = findUser(userSex);
-        if (user != null) {
-            return user.getContacts(userSex);
-        }
-        return null;
-    }
-
 
 
     private User findUser(String userName) {
@@ -59,14 +48,7 @@ public class UserJournal implements UserJournalInterface {
         }
         return null;
     }
-    private User findUserSex(String userSex) {
-        for (User user : users) {
-            if (user.getSex().equals(userSex)) {
-                return user;
-            }
-        }
-        return null;
-    }
+
 
     private void simulateNetworkLatency() {
         try {

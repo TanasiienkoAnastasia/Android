@@ -1,8 +1,8 @@
-package Entities.User.Greeter;
+package Entities.User.Iterator.Greeter;
 
-import Entities.User.User;
-import Entities.User.UserIterators.UserIterator;
-import Entities.User.Journal.UserJournalInterface;
+import Entities.User.Iterator.User;
+import Entities.User.Iterator.UserIterators.UserIterator;
+import Entities.User.Iterator.Journal.UserJournalInterface;
 
 public class UserGreeter {
     public UserJournalInterface journal;

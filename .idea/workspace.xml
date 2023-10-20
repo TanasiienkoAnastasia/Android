@@ -2,14 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1aaaf28-6d9f-4a70-bcbc-e741e9b71a58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entities/User/UserIterators/IteratorOfSexOfUsersOfJournal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Builders/Builder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Builders/FileBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Builders/FileManualBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Components/Creator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Components/FileNavigator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Components/Transmission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Components/TripComputer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/Director/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/File/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/File/FileCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/File/FileMonthDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Builder/File/Manual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Iterator/ChannelTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/File/Iterator/File.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/File/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/File/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User/Greeter/UserGreeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Greeter/UserGreeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User/Journal/UserJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Journal/UserJournal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User/UserIterators/IteratorOfUsersOfJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/UserIterators/IteratorOfTypeOfUsersOfJournal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/File/File.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/File/FileIterators/FileIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/File/FileIterators/IteratorOfFilesOfJournal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/File/Journal/FileJournal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/File/Journal/FileJournalInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/File/Sorter/FileSorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFileCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFileDate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFileLink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/File/Sorter/SortFilePlace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/User/Greeter/UserGreeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/Greeter/UserGreeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/User/Journal/UserJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/Journal/UserJournal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/User/Journal/UserJournalInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/Journal/UserJournalInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/User/UserIterators/IteratorOfSexOfUsersOfJournal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/User/UserIterators/IteratorOfTypeOfUsersOfJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/UserIterators/IteratorOfTypeOfUsersOfJournal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/User/UserIterators/UserIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User/Iterator/UserIterators/UserIterator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +71,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/shepe/Documents/RepositoriesForGitHubTanasiienkoAnastasia/Lab4_TRPZ&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/shepe/Documents/RepositoriesForGitHubTanasiienkoAnastasia/Lab4_TRPZ"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Entities.File.Builder.Builders" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Demo" />
+      <option name="MAIN_CLASS_NAME" value="Entities.User.Demo" />
       <module name="Iterrator" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,6 +114,12 @@
       <workItem from="1697373038379" duration="11263000" />
       <workItem from="1697387577822" duration="9527000" />
       <workItem from="1697565605331" duration="56000" />
+      <workItem from="1697733083504" duration="8646000" />
+      <workItem from="1697750693929" duration="666000" />
+      <workItem from="1697760836990" duration="3595000" />
+      <workItem from="1697765441243" duration="566000" />
+      <workItem from="1697766068489" duration="27000" />
+      <workItem from="1697766253096" duration="3954000" />
     </task>
     <servers />
   </component>

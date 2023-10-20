@@ -1,7 +1,9 @@
-import Entities.User.User;
-import Entities.User.Greeter.UserGreeter;
-import Entities.User.Journal.UserJournalInterface;
-import Entities.User.Journal.UserJournal;
+package Entities.User;
+
+import Entities.User.Iterator.User;
+import Entities.User.Iterator.Greeter.UserGreeter;
+import Entities.User.Iterator.Journal.UserJournalInterface;
+import Entities.User.Iterator.Journal.UserJournal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +19,11 @@ public class Demo {
         greeter.sendGreetToFriends("Nastya", "Greetings, friend!!");
         greeter.sendGreetToCoworkers("Andriy", "Greetings, coworker!!");
 
+        for (User person : createTestUsers()) {
+            System.out.println("Name: " + person.getName() + ", Gender: " + person.getSex());
+        }
+
+
     }
 
     public static List<User> createTestUsers() {
@@ -29,6 +36,7 @@ public class Demo {
         data.add(new User("Helen", "9382Hew", "male","friends:Nastya", "coworkers:"));
         return data;
     }
+
 
 
 }
